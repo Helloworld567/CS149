@@ -1,0 +1,408 @@
+﻿#include "ticketsale.h"
+
+
+
+
+int firstPrint = 1;
+int timesUp = 0;
+int midStep = 1;
+int midDir = 0;
+seller_t sellers[10];
+pthread_t sellerThreadId[SELLER_COUNT];
+
+
+/*statistics*/
+int hSeats = 0;
+int mSeats = 0;
+int lSeats = 0;
+int left = 0;
+
+
+
+
+void printSeatChart()
+{
+        pthread_mutex_lock(&printMutex);
+        int i, j;
+        printf("Seating Chart:\n");
+        for (i = 0; i < NO_ROWS; i++)
+        {
+                printf("ROW %d: ", i);
+                for(j = 0; j < NO_COLS; j++)
+                {
+                        switch (seats[i][j])
+                        {
+                                case 0 :         printf("EMPT|");
+                                                        break;
+                                case 1 :         printf("PEND|");
+                                                        break;
+                                case 2 :         printf("SOLD|");
+                                                        break;
+                                default :         printf("error");
+                                                        break;
+                        }
+                }                
+                printf("\n");
+        }
+        pthread_mutex_unlock(&printMutex);
+}
+
+
+void initSeats()
+{
+        int i, j;
+        for (i = 0; i < NO_ROWS; i++)
+        {
+                for(j = 0; j < NO_COLS; j++)
+                {
+                        seats[i][j] = 0;
+                }
+        }
+}
+
+
+int getNextSeat(seatNum *sNum, seller_t *s) {
+    int retVal = -1;
+    if (s->id / 100 < 2) //High-priced seller
+    {
+                while(seats[seatH.row][seatH.col] != 0)
+                {
+                        if (seatH.col > 9) {
+                                seatH.col %= 10;
+                                seatH.row++;
+                                if (seatH.row > 9)
+                                        return -1;
+                        } 
+                        else
+                        {
+                                seatH.col++;
+                        }
+                }
+                if (seatH.row == 10)// all seats been searched
+                        return -1;
+        sNum->row = seatH.row;
+        sNum->col = seatH.col;
+        retVal = 0;
+    } 
+    else if (s->id / 100 > 4) //Low-priced seller
+    {
+                while(seats[seatL.row][seatL.col] != 0)
+                {
+                        if (seatL.col < 0) {
+                                seatL.col = 9;
+                                seatL.row--;
+                                if (seatL.row < 0)
+                                        return -1;
+                        } 
+                        else
+                        {
+                                seatL.col--;
+                        }
+                }
+                if (seatL.row == -1)// all seats been searched
+                        return -1;
+        sNum->row = seatL.row;
+        sNum->col = seatL.col;
+        retVal = 0;
+    }
+    else // Mid-priced seller
+    {// always go foward when row >= 4,backwards when row < 4
+        while(seats[seatM.row][seatM.col] != 0)
+                {
+                        if (seatM.col > 9) {
+                                seatM.col = 0;
+                                seatM.row = (midDir == 0)?(seatM.row + midStep):(seatM.row - midStep);
+                                midDir = !midDir;
+                                midStep++;
+                                if (seatM.row < 0 || seatM.row > 9)
+                                        return -1;
+                        } 
+                        else
+                        {
+                                seatM.col++;
+                        }
+                }
+                if (seatM.row < 0 || seatM.row > 9)
+                        return -1;
+        sNum->row = seatM.row;
+        sNum->col = seatM.col;
+        retVal = 0;
+    }
+    return retVal;
+}
+
+
+
+
+void sellerSellsTicket(seller_t *s)
+{
+    if (!timesUp) {
+        // Wait on the "filledQueue" semaphore for a customer.
+        pthread_setcancelstate(PTHREAD_CANCEL_ENABLE, NULL);
+        sem_wait(&s->filledQueue);
+        pthread_setcancelstate(PTHREAD_CANCEL_DISABLE, NULL);
+
+
+
+
+        // Acquire the mutex lock to protect the queue.
+        pthread_mutex_lock(&s->qMutex);
+
+
+        // Critical region: Remove a customer from queue.
+        int customerId = s->queue[s->out];
+        s->out = (s->out+1)%QUEUE_SIZE;
+
+
+        // Release the mutex lock.
+        pthread_mutex_unlock(&s->qMutex);
+
+
+        // Acquire the mutex lock to protect the queue.
+        pthread_mutex_lock(&seatMutex);
+
+
+        // Check if there are any availabe seats
+        seatNum sNum; 
+        if (getNextSeat(&sNum, s) == 0)
+            seats[sNum.row][sNum.col] = customerId;
+        else
+            soldOut = 1; 
+        
+        // Release the mutex lock.
+        pthread_mutex_unlock(&s->qMutex);
+
+
+        char event[80];
+        sprintf(event, "Seller sells to customer %d",  customerId);
+        printEvent();
+
+
+        // Meet with the student.
+        sleep(rand()%MAX_SELLING_DURATION + 1);
+
+
+        sprintf(event, "Seller finishes with customer %d",  customerId);
+        printEvent();
+    }
+}
+
+
+void printEvent(char *event, seller_t *s)
+{
+    time_t now;
+    time(&now);
+    double elapsed = difftime(now, s->startTime);
+    int min = 0;
+    int sec = (int) elapsed;
+
+
+    if (sec >= 60) {
+        min++;
+        sec -= 60;
+    }
+
+
+    // Acquire the mutex lock to protect the printing.
+    pthread_mutex_lock(&printMutex);
+
+
+    if (firstPrint) {
+        printf("TIME | SELLING               | EVENT\n");
+        firstPrint = 0;
+    }
+
+
+    // Elapsed time.
+    printf("%1d:%02d | ", min, sec);
+
+
+    // Who's meeting with the professor.
+    if (s->sellingId > 0) {
+        printf("%5d   |", s->sellingId);
+    }
+    else {
+        printf("        |");
+    }
+
+
+    // What event occurred.
+    //while (k++ < QUEUE_SIZE) printf("    ");
+    printf("   %s\n", event);
+
+
+    // Release the mutex lock.
+    pthread_mutex_unlock(&printMutex);
+}
+
+
+//The seller thread
+void *seller(void *param) 
+{
+    seller_t *s = param;
+    time(&s->startTime);
+    
+    char event[80];
+    sprintf(event, "Seller %d starts to sell ticket", s->id);
+    printEvent(event, s);
+    // Set the timer for for one hour
+    s->sellerTimer.it_value.tv_sec = TICKET_SELLING_DURATION;
+    setitimer(ITIMER_REAL, &s->sellerTimer, NULL);
+
+
+    // Meet students until the office hour is over.
+    do {
+        sellerSellsTicket(s);
+    } while (!timesUp);
+
+
+    printEvent(event, s);
+    return NULL;
+}
+
+
+
+
+//The seller thread
+void *seller(void *param) 
+{
+    seller_t *s = param;
+    time(&s->startTime);
+    printEvent();
+    // Set the timer for for one hour
+    s->sellerTimer.it_value.tv_sec = TICKET_SELLING_DURATION;
+    setitimer(ITIMER_REAL, &s->sellerTimer, NULL);
+
+
+    // Meet students until the office hour is over.
+    do {
+        sellerSellsTicket();
+    } while (!timesUp);
+
+
+    printEvent();
+    return NULL;
+}
+
+
+void *customerArrives(int id)
+{
+    char event[80];
+    //arrivalsCount++;
+    int sellerIndex = id / 100;
+    seller_t *s = &sellers[sellerIndex];
+    // Acquire the mutex lock to protect the chairs and the wait count.
+    pthread_mutex_lock(&s->qMutex);
+
+
+    // new arrival customer in the queue
+    (s->queue)[s->in] = s->id;
+    s->in++;
+    //waitCount++;
+
+
+    // Release the mutex lock.
+    pthread_mutex_unlock(&s->qMutex);
+
+
+    sprintf(event, "customer %d arrives and waits", s->id);
+    print(event);
+
+
+    // Signal the "filledQueue" semaphore.
+    sem_post(&s->filledQueue);  // signal
+
+
+
+
+}
+
+
+void *customer(void *param)
+{
+    int id = *((int *) param);
+
+
+    // Students will arrive at random times during the office hour.
+    sleep(rand()%TICKET_SELLING_DURATION);
+    customerArrives(id);
+
+
+    return NULL;
+}
+
+
+
+
+
+
+// Timer signal handler.
+void timerHandler(int signal)
+{
+          printf("Time Up!\n");
+          timesUp = 1;  // office hour is over
+        //cancellation requestion if waiting
+        int i = 0;
+        for(i = 0; i < SELLER_COUNT; i++)
+        {
+                pthread_cancel(sellerThreadId[i]);
+        }
+
+
+}
+void initSeller(seller_t *s pthread_t * t)
+{
+    s->id = 0;
+    s->in = 0;
+    s->out = 0;
+    sem_init(&s->filledQueue, 0, 0);
+    pthread_mutex_init(&s->qMutex, NULL);
+    // Create the seller thread.
+    pthread_t sellerThreadId;
+    *t = sellerThreadId;
+    pthread_attr_t sellerAttr;
+    pthread_attr_init(&sellerAttr);
+    pthread_create(&sellerThreadId, &sellerAttr, seller, s);
+}
+
+
+int main(int argc, char *argv[])
+{
+    seller_t sellers[10];
+    int customerIds[10];
+
+
+    pthread_t sellerThreadId[SELLER_COUNT];
+
+
+    // Initialize the mutexes and the semaphore.
+    pthread_mutex_init(&seatMutex, NULL);
+    pthread_mutex_init(&printMutex, NULL);
+    
+    initSeller(&sellers[0]);
+
+
+    srand(time(0));
+
+
+    // Create the customer threads.
+    int i;
+    for (i = 0; i < 10; i++) {
+        customerIds[i] = SELLER_ID + i;
+        pthread_t customerThreadId;
+        pthread_attr_t customerAttr;
+        pthread_attr_init(&customerAttr);
+        pthread_create(&customerThreadId, &customerAttr, customer, &customerIds[i]);
+    }
+
+
+signal(SIGALRM, timerHandler);
+    
+// Wait for the professor to complete the office hour.
+pthread_join(sellerThreadId[0], NULL);
+
+
+
+
+    return 0;
+}

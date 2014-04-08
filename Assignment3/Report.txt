@@ -1,0 +1,24 @@
+﻿Assignment 3: Multithread programming
+Section: 3. Team:FLAG. Team Member: Guanghui Zhou, Zihe Liu.
+
+
+Deadlock in the given code:
+If all the student have met the professor before time up, the professorMeetsStudent function could enter the state when filledChairs semaphore is 0 and the thread is waiting on it. The timeUp signal will not be able to trigger it.
+
+
+Solution: put the thread into cancel_enable state before entering the sem_wait, and back to cancel_disable mode when sem_wait is unblocked. Then in the timeUp Handler, cancel the professor thread if it is cancel enabled.
+
+
+Ticket Seller Program:
+The program contains two files
+Ticketsale.h is the header file that contains the function declaration, #defines, #includes, and some global variable. The seller struct is also defined in this file.
+Ticketsale.c contains all the functions and the main function.
+
+
+First the main function will create an array of sellers, and initialize 10 seller threads using this sellers array. Then customer threads are generated and put into sleep to simulate the arrival of customers. When a customer wakes up, it will write its id to the corresponding seller queue to simulate entering the line. The seller will pick the first customer in the line and start assigning seats. At this time, the seat is already occupied. But the seller will need to take some time before letting the next customer in. This process is also simulated by sleep. Each seller will have its own queue to process customers.
+
+
+The H, L and M sellers will randomly generate their sleep time in corresponding range to simulate the process of  selling tickets. Customer’s arrival time is also generated randomly during the whole ticket selling time frame. Shared data includes seatMutex and printMutex, and each seller has his/her own queueMutex and filledQueue semaphore wrapped in the seller struct to insure correct queue operation, each seller also has his/her id and queue pointer. critical region includes the parts that modifies the Seating char and doing the printing. Also the modification of each seller’s queue is also critical regions and each seller has his/her own queueMutex and filledQueue semaphore to insure protection. Each seller can modify their own queue and pointer concurrently. 
+
+
+Extra Credit, if a customer waits 10 mins and find out that it is still in the queue (current out is less than its position), the customer will set its id to -1 to signal he/she has left the queue, and the seller will skip the id if it is -1. The other logic works similar to the given officehour program

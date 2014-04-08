@@ -1,0 +1,70 @@
+﻿#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <pthread.h>
+#include <semaphore.h>
+#include <signal.h>
+#include <sys/time.h>
+#include <string.h>
+
+
+#define SELLER_ID 100
+#define SELLER_COUNT 10
+#define NO_ROWS 10
+#define NO_COLS 10
+#define NO_SEATS  NO_ROWS*NO_COLS
+//#define QUEUE_SIZE 10 use global variable, because it is an input from user
+#define TICKET_SELLING_DURATION 60
+
+
+typedef struct seller
+{
+    int id;
+    int queue[10];
+    int in;
+    int out;
+    int sellingId;
+    time_t startTime;
+    struct itimerval sellerTimer;
+    pthread_mutex_t qMutex;
+    sem_t filledQueue;
+} seller_t;
+
+
+typedef struct seatNum
+{
+    int row;
+    int col;
+} seatNum;
+
+
+pthread_mutex_t seatMutex;
+pthread_mutex_t printMutex;
+
+
+
+
+int seats[NO_ROWS][NO_COLS];//0 - available, 1 - ?, 2 - ?
+seatNum seatH = {0, 0};
+seatNum seatM = {4, 0};
+seatNum seatL = {9, 9};
+int soldOut = 0;
+int timesUp = 0;
+
+
+
+
+void initSeller(seller_t*); 
+void initSeats(); // done
+void printEvent(char* event);  // I am working on this
+void printSeatChart(); // partly done
+
+
+void * customer(void * param); //customer, id as parameter  //done
+void * seller(void *param); //parameter as customer id
+void customerArrives(seller_t *s); //done
+void sellerSellTicket(seller_t *s); // seller id as parameter 0~9
+int getNextSeat(seatNum *sNum, seller_t *s) ;// I am working on it
+
+
+//I created a new file for ticketsale.c, so far whatever i put in can compile

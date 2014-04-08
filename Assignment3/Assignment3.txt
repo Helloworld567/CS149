@@ -1,0 +1,2 @@
+﻿Question:
+Does seller release seat right after he checks if there are any seats left, or wait for his selling time to finish and then release seat?

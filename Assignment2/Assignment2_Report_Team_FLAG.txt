@@ -1,0 +1,62 @@
+﻿Assignment 2 Report 
+Team FLAG
+
+
+Statistics for each scheduling algorithms:
+1. FCFS
+Avg Turnaround time = 43.82359
+Avg Waiting time        = 38.25895
+Avg Response time   = 38.189177
+Throughput               = 16.6
+Comment: worst performance of all, but less overhead. 
+
+
+2. Shortest Job First:
+Avg Turnaround time = 9.62067
+Avg Waiting time    = 7.4463587
+Avg Response time   = 6.9195237
+Throughput           = 37.2
+Comment: Provided that we can accurately predict the run time for each process, the shortest job first provides very good performance.
+
+
+3. Shortest Remaining Time
+Avg Turnaround time = 5.9128976
+Avg Waiting time        = 3.9244332
+Avg Response time   = 3.8756115
+Throughput               = 40.0
+Comment: SRT algorithm has the best throughput, and also good performance on all other statistics, but it might introduce a lot of overhead doing the process switching. Since we don’t count the overhead in this assignment, SRT gives the best performance of all.
+
+
+4. Round Robin:
+Avg Turnaround time = 38.109867
+Avg Waiting time    = 36.823734
+Avg Response time   = 7.569867
+Throughput           = 4.0
+Comment: Round Robin provides very short response time because every process evenly  get the chance to run, but since the number of process are relatively high (100) compare to the run time for each process(10). The throughput is the lowest among all the algorithems.
+
+
+5.Highest priority First non-preemptive.
+Avg Turnaround time = 27.85968
+Avg Waiting time        = 28.326086
+Avg Response time   = 22.290974
+Throughput               = 18.4
+Comment: Better performance than FCFS
+
+
+6. Highest priority first preemptive.
+Avg Turnaround time = 24.506968
+Avg Waiting time    = 19.355991
+Avg Response time   = 19.80629
+Throughput           = 17.0
+Comment: Performance is not as good as SJF and SRT, but the algorithm does not depends on the prediction of run time.
+
+
+7. Highest priority first preemptive with promotion 
+Avg Turnaround time = 45.840126
+Avg Waiting time    = 40.893723
+Avg Response time   = 39.33597
+Throughput           = 18.2
+Comment: Sometimes performance is a little better than the HPF without promotion, but implementation is more complex. The performance boost is not obvious with small number of processes (100)
+
+
+ To sum up, SJF and SRT gives the best performance in all aspects. FCFS has the worst performance of all. RR has good response time, but has worst throughput. HPF(preemptive and nonpreemptive) seems to be a good choice in reality, since we don’t always get to know a process’s runtime in advance.

@@ -1,0 +1,258 @@
+﻿import java.util.*;
+import java.util.Map.Entry;
+
+
+
+
+public class Paging {
+        private int pageFrames;
+    private final int numRef = 100;
+    public int numHit;
+    private int lastRef;
+    
+    String replaceAlgo;
+    
+    public Paging(String algorithm) {
+            this.replaceAlgo = algorithm;
+            this.lastRef = -1;
+            this.numHit = 0;
+    }
+    public void run() {
+            if (replaceAlgo.equals("FIFO"))
+                    fifo();
+            else if (replaceAlgo.equals("LRU"))
+                    lru();
+            else if (replaceAlgo.equals("LFU"))
+                    lfu();
+            else if (replaceAlgo.equals("MFU"))
+                    mfu();
+            else if (replaceAlgo.equals("RANDPICK"))
+                    randPick();
+            else
+                    return;
+    }
+    private int nextRef() {
+            int randNum = (int) (Math.random() * (9 - 0));
+            if (lastRef != -1) { // Not the first reference
+                    if (randNum >= 0 && randNum < 7) {
+                            while (Math.abs(lastRef - randNum) > 1)
+                                    randNum = (int) (Math.random() * (9 - 0));
+                    }
+                    else if (randNum >= 7 && randNum <= 9) {
+                            while (Math.abs(lastRef - randNum) < 2)
+                                    randNum = (int) (Math.random() * (9 - 0));
+                    }
+            }
+            lastRef = randNum;
+            return randNum;
+    }
+    private void fifo() {
+            Queue<Integer> pageTable = new LinkedList<Integer>();
+            for (int i = 0; i < numRef; i++) {
+                    int page = nextRef();
+                    System.out.printf("Pages in Memory are: ");
+                    Iterator it = pageTable.iterator();
+                    for (int j = 0; j < 4; j++) {
+                            if (it.hasNext())
+                                    System.out.printf("%4d ", it.next());
+                            else
+                                    System.out.printf("null ");
+                    }
+                    System.out.printf("| Referencing page %d | ", page);
+                    //Hit
+                    if (pageTable.contains(page)) {
+                            numHit++;
+                            System.out.printf("Page %d is in Memory\n", page);
+                    }
+                    else if (pageTable.size() < 4) {
+                            pageTable.offer(page);
+                            System.out.printf("Page %d is loaded in Memory\n", page);
+                    }
+                    else { //Evict the page loaded in memory first
+                            pageTable.offer(page);
+                            System.out.printf("Page %d is evicted\n", pageTable.poll());
+                    }                         
+            }
+    }
+    private void lru() {
+            LinkedHashMap<Integer, Integer> pageTable = new LinkedHashMap<Integer, Integer>();
+            for (int i = 0; i < numRef; i++) {
+                    int page = nextRef();
+                    System.out.printf("Pages in Memory are: ");
+                    Iterator it = pageTable.keySet().iterator();
+                    for (int j = 0; j < 4; j++) {
+                            if (it.hasNext())
+                                    System.out.printf("%4d ", it.next());
+                            else
+                                    System.out.printf("null ");
+                    }
+                    System.out.printf("| Referencing page %d | ", page);
+                    //Hit
+                    if (pageTable.containsKey(page)) {
+                            numHit++;
+                            pageTable.remove(page);
+                            pageTable.put(page, page);
+                            System.out.printf("Page %d is in Memory\n", page);
+                    }
+                    else if (pageTable.size() < 4) {
+                            pageTable.put(page, page);
+                            System.out.printf("Page %d is loaded in Memory\n", page);
+                    }
+                    else {
+                            int firstKey = pageTable.keySet().iterator().next();
+                            pageTable.remove(firstKey);
+                            pageTable.put(page, page);
+                            System.out.printf("Page %d is evicted\n", firstKey);
+                    }                         
+            }
+    }
+    private void lfu() {
+            HashMap<Integer, Integer> pageTable = new HashMap<Integer, Integer>();
+            for (int i = 0; i < numRef; i++) {
+                    int page = nextRef();
+                    System.out.printf("Pages in Memory are: ");
+                    Iterator it = pageTable.keySet().iterator();
+                    for (int j = 0; j < 4; j++) {
+                            if (it.hasNext())
+                                    System.out.printf("%4d ", it.next());
+                            else
+                                    System.out.printf("null ");
+                    }
+                    System.out.printf("| Referencing page %d | ", page);
+                    //Hit
+                    if (pageTable.containsKey(page)) {
+                            numHit++;
+                            int val = pageTable.get(page);
+                            pageTable.put(page, val+1);
+                            System.out.printf("Page %d freq=%d is in Memory\n", page, pageTable.get(page));
+                    }
+                    else if (pageTable.size() < 4) {
+                            pageTable.put(page, 0);
+                            System.out.printf("Page %d is loaded in Memory\n", page);
+                    }
+                    else {
+                            // Loop through hashmap to find the least freq
+                            Entry<Integer, Integer> min = null;
+                            for (Entry<Integer, Integer> entry : pageTable.entrySet())
+                                    if (min == null || entry.getValue() < min.getValue())
+                                            min = entry;
+                            pageTable.remove(min.getKey());
+                            pageTable.put(page, 0);
+                            System.out.printf("Page %d freq=%d is evicted\n", min.getKey(), min.getValue());
+                    }                         
+            }
+    }
+    private void mfu() {
+            HashMap<Integer, Integer> pageTable = new HashMap<Integer, Integer>();
+            for (int i = 0; i < numRef; i++) {
+                    int page = nextRef();
+                    System.out.printf("Pages in Memory are: ");
+                    Iterator it = pageTable.keySet().iterator();
+                    for (int j = 0; j < 4; j++) {
+                            if (it.hasNext())
+                                    System.out.printf("%4d ", it.next());
+                            else
+                                    System.out.printf("null ");
+                    }
+                    System.out.printf("| Referencing page %d | ", page);
+                    //Hit
+                    if (pageTable.containsKey(page)) {
+                            numHit++;
+                            int val = pageTable.get(page);
+                            pageTable.put(page, val+1);
+                            System.out.printf("Page %d is in Memory\n", page);
+                    }
+                    else if (pageTable.size() < 4) {
+                            pageTable.put(page, 0);
+                            System.out.printf("Page %d is loaded in Memory\n", page);
+                    }
+                    else {
+                            // Loop through hashmap to find the most freq
+                            Entry<Integer, Integer> max = null;
+                            for (Entry<Integer, Integer> entry : pageTable.entrySet())
+                                    if (max == null || entry.getValue() > max.getValue())
+                                            max = entry;
+                            pageTable.remove(max.getKey());
+                            pageTable.put(page, 0);
+                            System.out.printf("Page %d is evicted\n", max.getKey());
+                    }                         
+            }
+    }
+    private void randPick() {
+            ArrayList<Integer> pageTable = new ArrayList<Integer>();
+            for (int i = 0; i < numRef; i++) {
+                    int page = nextRef();
+                    System.out.printf("Pages in Memory are: ");
+                    Iterator it = pageTable.iterator();
+                    for (int j = 0; j < 4; j++) {
+                            if (it.hasNext())
+                                    System.out.printf("%4d ", it.next());
+                            else
+                                    System.out.printf("null ");
+                    }
+                    System.out.printf("| Referencing page %d | ", page);
+                    //Hit
+                    if (pageTable.contains(page)) {
+                            numHit++;
+                            System.out.printf("Page %d is in Memory\n", page);
+                    }
+                    else if (pageTable.size() < 4) {
+                            pageTable.add(page);
+                            System.out.printf("Page %d is loaded in Memory\n", page);
+                    }
+                    else {
+                            // random pick
+                            int rand = (int) (Math.random() * (3 - 0));
+                            int evictP = pageTable.get(rand);
+                            pageTable.set(rand, page);
+                            System.out.printf("Page %d is evicted\n", evictP);
+                    }                         
+            }
+    }
+    public int getHitRatio() {
+            //StringBuilder ratio = new StringBuilder();
+            //ratio.append(numHit);
+            //ratio.append("%");
+            return numHit;
+    }
+    public void printNextRef() {
+            System.out.println(nextRef());
+    }
+        public static void main(String[] args) {
+                int fifoHit = 0, lruHit = 0, lfuHit = 0, mfuHit = 0, randPickHit = 0;
+                for (int i = 0; i < 5; i++) {
+                        Paging fifo = new Paging("FIFO");
+                        Paging lru = new Paging("LRU");
+                        Paging lfu = new Paging("LFU");
+                        Paging mfu = new Paging("MFU");
+                        Paging randPick = new Paging("RANDPICK");
+                    fifo.run();
+                    fifoHit += fifo.getHitRatio();
+                    lru.run();
+                    lruHit += lru.getHitRatio();
+                    lfu.run();
+                    lfuHit += lfu.getHitRatio();
+                    mfu.run();
+                    mfuHit += mfu.getHitRatio();
+                    randPick.run();
+                    randPickHit += randPick.getHitRatio();
+                }
+                StringBuilder FIFOratio = new StringBuilder();
+            FIFOratio.append(fifoHit/5);
+            StringBuilder LRUratio = new StringBuilder();
+            LRUratio.append(lruHit/5);
+            StringBuilder LFUratio = new StringBuilder();
+            LFUratio.append(lfuHit/5);
+            StringBuilder MFUratio = new StringBuilder();
+            MFUratio.append(mfuHit/5);
+            StringBuilder RANDPICKratio = new StringBuilder();
+            RANDPICKratio.append(randPickHit/5);
+                System.out.printf("Average Hit Ratio for FIFO replace algorithm is %s\n", FIFOratio.append("%").toString());
+                System.out.printf("Average Hit Ratio for LRU replace algorithm is %s\n", LRUratio.append("%").toString());
+                System.out.printf("Average Hit Ratio for LFU replace algorithm is %s\n", LFUratio.append("%").toString());
+                System.out.printf("Average Hit Ratio for MFU replace algorithm is %s\n", MFUratio.append("%").toString());
+                System.out.printf("Average Hit Ratio for RANDPICK replace algorithm is %s\n", RANDPICKratio.append("%").toString());
+        }
+
+
+}

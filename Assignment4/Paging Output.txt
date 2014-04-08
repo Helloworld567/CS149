@@ -1,0 +1,942 @@
+﻿Pages in Memory are:    6    8    2    7 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    6    8    2    7 | Referencing page 3 | Page 6 is evicted
+Pages in Memory are:    8    2    7    3 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    8    2    7    3 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    8    2    7    3 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    8    2    7    3 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    8    2    7    3 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    8    2    7    3 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    8    2    7    3 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    8    2    7    3 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    8    2    7    3 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    8    2    7    3 | Referencing page 4 | Page 8 is evicted
+Pages in Memory are:    2    7    3    4 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    2    7    3    4 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    2    7    3    4 | Referencing page 5 | Page 2 is evicted
+Pages in Memory are:    7    3    4    5 | Referencing page 6 | Page 7 is evicted
+Pages in Memory are:    3    4    5    6 | Referencing page 7 | Page 3 is evicted
+Pages in Memory are:    4    5    6    7 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    4    5    6    7 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    4    5    6    7 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    4    5    6    7 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    4    5    6    7 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    4    5    6    7 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    4    5    6    7 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    4    5    6    7 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    4    5    6    7 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    4    5    6    7 | Referencing page 8 | Page 4 is evicted
+Pages in Memory are:    5    6    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are: null null null null | Referencing page 2 | Page 2 is loaded in Memory
+Pages in Memory are:    2 null null null | Referencing page 3 | Page 3 is loaded in Memory
+Pages in Memory are:    2    3 null null | Referencing page 7 | Page 7 is loaded in Memory
+Pages in Memory are:    2    3    7 null | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    2    7    3 null | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    7    3    2 null | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    3    2    7 null | Referencing page 6 | Page 6 is loaded in Memory
+Pages in Memory are:    3    2    7    6 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    2    7    6 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    2    7    6 | Referencing page 5 | Page 3 is evicted
+Pages in Memory are:    2    7    6    5 | Referencing page 8 | Page 2 is evicted
+Pages in Memory are:    7    6    5    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    7    6    5    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    7    6    5    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    6    5    8    7 | Referencing page 1 | Page 6 is evicted
+Pages in Memory are:    5    8    7    1 | Referencing page 2 | Page 5 is evicted
+Pages in Memory are:    8    7    1    2 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    8    7    2    1 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    8    2    1    7 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    8    2    1    7 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    2    1    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    2    1    8    7 | Referencing page 6 | Page 2 is evicted
+Pages in Memory are:    1    8    7    6 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    1    8    7    6 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    1    8    6    7 | Referencing page 5 | Page 1 is evicted
+Pages in Memory are:    8    6    7    5 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    8    6    7    5 | Referencing page 4 | Page 8 is evicted
+Pages in Memory are:    6    7    5    4 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    6    7    4    5 | Referencing page 8 | Page 6 is evicted
+Pages in Memory are:    7    4    5    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    4    5    8    7 | Referencing page 0 | Page 4 is evicted
+Pages in Memory are:    5    8    7    0 | Referencing page 0 | Page 0 is in Memory
+Pages in Memory are:    5    8    7    0 | Referencing page 1 | Page 5 is evicted
+Pages in Memory are:    8    7    0    1 | Referencing page 2 | Page 8 is evicted
+Pages in Memory are:    7    0    1    2 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    7    0    2    1 | Referencing page 0 | Page 0 is in Memory
+Pages in Memory are:    7    2    1    0 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    7    2    0    1 | Referencing page 8 | Page 7 is evicted
+Pages in Memory are:    2    0    1    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    2    0    1    8 | Referencing page 3 | Page 2 is evicted
+Pages in Memory are:    0    1    8    3 | Referencing page 4 | Page 0 is evicted
+Pages in Memory are:    1    8    3    4 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    1    8    4    3 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    1    8    3    4 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    3    4    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    3    4    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    3    4    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    3    4    8 | Referencing page 2 | Page 1 is evicted
+Pages in Memory are:    3    4    8    2 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    4    2    8 | Referencing page 7 | Page 3 is evicted
+Pages in Memory are:    4    2    8    7 | Referencing page 5 | Page 4 is evicted
+Pages in Memory are:    2    8    7    5 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    2    8    7    5 | Referencing page 4 | Page 2 is evicted
+Pages in Memory are:    8    7    5    4 | Referencing page 3 | Page 8 is evicted
+Pages in Memory are:    7    5    4    3 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    7    5    3    4 | Referencing page 8 | Page 7 is evicted
+Pages in Memory are:    5    3    4    8 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    5    4    8    3 | Referencing page 2 | Page 5 is evicted
+Pages in Memory are:    4    8    3    2 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    4    8    2    3 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    4    8    2    3 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    8    2    3    4 | Referencing page 5 | Page 8 is evicted
+Pages in Memory are:    2    3    4    5 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    2    3    4    5 | Referencing page 6 | Page 2 is evicted
+Pages in Memory are:    3    4    5    6 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    4    5    6 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    4    5    6 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    4    5    6 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    3    4    6    5 | Referencing page 8 | Page 3 is evicted
+Pages in Memory are:    4    6    5    8 | Referencing page 7 | Page 4 is evicted
+Pages in Memory are:    6    5    8    7 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    6    5    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    6    5    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    6    5    8    7 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    6    5    8    7 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    6    5    8    7 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    5    8    7    6 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    7    6    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    7    6    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    7    6    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    5    6    8    7 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 1 | Page 5 is evicted
+Pages in Memory are:    6    7    8    1 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    6    7    8    1 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    6    7    8    1 | Referencing page 0 | Page 6 is evicted
+Pages in Memory are:    7    8    1    0 | Referencing page 0 | Page 0 is in Memory
+Pages in Memory are:    7    8    1    0 | Referencing page 0 | Page 0 is in Memory
+Pages in Memory are:    7    8    1    0 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    7    8    0    1 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    7    8    0    1 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    8    0    1    7 | Referencing page 2 | Page 8 is evicted
+Pages in Memory are:    0    1    7    2 | Referencing page 3 | Page 0 is evicted
+Pages in Memory are:    1    7    2    3 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    1    7    3    2 | Referencing page 8 | Page 1 is evicted
+Pages in Memory are:    7    3    2    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    7    3    2    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    7    3    2    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    3    2    8    7 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    3    2    8    7 | Referencing page 6 | Page 3 is evicted
+Pages in Memory are: null null null null | Referencing page 7 | Page 7 is loaded in Memory
+Pages in Memory are:    7 null null null | Referencing page 7 | Page 7 freq=1 is in Memory
+Pages in Memory are:    7 null null null | Referencing page 7 | Page 7 freq=2 is in Memory
+Pages in Memory are:    7 null null null | Referencing page 4 | Page 4 is loaded in Memory
+Pages in Memory are:    4    7 null null | Referencing page 8 | Page 8 is loaded in Memory
+Pages in Memory are:    4    7    8 null | Referencing page 7 | Page 7 freq=3 is in Memory
+Pages in Memory are:    4    7    8 null | Referencing page 4 | Page 4 freq=1 is in Memory
+Pages in Memory are:    4    7    8 null | Referencing page 3 | Page 3 is loaded in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 3 | Page 3 freq=1 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 3 | Page 3 freq=2 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 3 | Page 3 freq=3 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 4 | Page 4 freq=2 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 4 | Page 4 freq=3 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 3 | Page 3 freq=4 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 2 | Page 8 freq=0 is evicted
+Pages in Memory are:    2    3    4    7 | Referencing page 3 | Page 3 freq=5 is in Memory
+Pages in Memory are:    2    3    4    7 | Referencing page 4 | Page 4 freq=4 is in Memory
+Pages in Memory are:    2    3    4    7 | Referencing page 3 | Page 3 freq=6 is in Memory
+Pages in Memory are:    2    3    4    7 | Referencing page 7 | Page 7 freq=4 is in Memory
+Pages in Memory are:    2    3    4    7 | Referencing page 6 | Page 2 freq=0 is evicted
+Pages in Memory are:    3    4    6    7 | Referencing page 5 | Page 6 freq=0 is evicted
+Pages in Memory are:    3    4    5    7 | Referencing page 6 | Page 5 freq=0 is evicted
+Pages in Memory are:    3    4    6    7 | Referencing page 5 | Page 6 freq=0 is evicted
+Pages in Memory are:    3    4    5    7 | Referencing page 8 | Page 5 freq=0 is evicted
+Pages in Memory are:    3    4    7    8 | Referencing page 5 | Page 8 freq=0 is evicted
+Pages in Memory are:    3    4    5    7 | Referencing page 8 | Page 5 freq=0 is evicted
+Pages in Memory are:    3    4    7    8 | Referencing page 3 | Page 3 freq=7 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 2 | Page 8 freq=0 is evicted
+Pages in Memory are:    2    3    4    7 | Referencing page 1 | Page 2 freq=0 is evicted
+Pages in Memory are:    1    3    4    7 | Referencing page 2 | Page 1 freq=0 is evicted
+Pages in Memory are:    2    3    4    7 | Referencing page 8 | Page 2 freq=0 is evicted
+Pages in Memory are:    3    4    7    8 | Referencing page 1 | Page 8 freq=0 is evicted
+Pages in Memory are:    1    3    4    7 | Referencing page 2 | Page 1 freq=0 is evicted
+Pages in Memory are:    2    3    4    7 | Referencing page 2 | Page 2 freq=1 is in Memory
+Pages in Memory are:    2    3    4    7 | Referencing page 2 | Page 2 freq=2 is in Memory
+Pages in Memory are:    2    3    4    7 | Referencing page 8 | Page 2 freq=2 is evicted
+Pages in Memory are:    3    4    7    8 | Referencing page 2 | Page 8 freq=0 is evicted
+Pages in Memory are:    2    3    4    7 | Referencing page 2 | Page 2 freq=1 is in Memory
+Pages in Memory are:    2    3    4    7 | Referencing page 2 | Page 2 freq=2 is in Memory
+Pages in Memory are:    2    3    4    7 | Referencing page 3 | Page 3 freq=8 is in Memory
+Pages in Memory are:    2    3    4    7 | Referencing page 2 | Page 2 freq=3 is in Memory
+Pages in Memory are:    2    3    4    7 | Referencing page 3 | Page 3 freq=9 is in Memory
+Pages in Memory are:    2    3    4    7 | Referencing page 2 | Page 2 freq=4 is in Memory
+Pages in Memory are:    2    3    4    7 | Referencing page 3 | Page 3 freq=10 is in Memory
+Pages in Memory are:    2    3    4    7 | Referencing page 4 | Page 4 freq=5 is in Memory
+Pages in Memory are:    2    3    4    7 | Referencing page 5 | Page 2 freq=4 is evicted
+Pages in Memory are:    3    4    5    7 | Referencing page 4 | Page 4 freq=6 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 7 | Page 7 freq=5 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 6 | Page 5 freq=0 is evicted
+Pages in Memory are:    3    4    6    7 | Referencing page 5 | Page 6 freq=0 is evicted
+Pages in Memory are:    3    4    5    7 | Referencing page 5 | Page 5 freq=1 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 4 | Page 4 freq=7 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 5 | Page 5 freq=2 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 4 | Page 4 freq=8 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 4 | Page 4 freq=9 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 5 | Page 5 freq=3 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 4 | Page 4 freq=10 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 5 | Page 5 freq=4 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 4 | Page 4 freq=11 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 3 | Page 3 freq=11 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 2 | Page 5 freq=4 is evicted
+Pages in Memory are:    2    3    4    7 | Referencing page 7 | Page 7 freq=6 is in Memory
+Pages in Memory are:    2    3    4    7 | Referencing page 6 | Page 2 freq=0 is evicted
+Pages in Memory are:    3    4    6    7 | Referencing page 7 | Page 7 freq=7 is in Memory
+Pages in Memory are:    3    4    6    7 | Referencing page 8 | Page 6 freq=0 is evicted
+Pages in Memory are:    3    4    7    8 | Referencing page 7 | Page 7 freq=8 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 8 | Page 8 freq=1 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 8 | Page 8 freq=2 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 8 | Page 8 freq=3 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 6 | Page 8 freq=3 is evicted
+Pages in Memory are:    3    4    6    7 | Referencing page 6 | Page 6 freq=1 is in Memory
+Pages in Memory are:    3    4    6    7 | Referencing page 7 | Page 7 freq=9 is in Memory
+Pages in Memory are:    3    4    6    7 | Referencing page 1 | Page 6 freq=1 is evicted
+Pages in Memory are:    1    3    4    7 | Referencing page 7 | Page 7 freq=10 is in Memory
+Pages in Memory are:    1    3    4    7 | Referencing page 6 | Page 1 freq=0 is evicted
+Pages in Memory are:    3    4    6    7 | Referencing page 7 | Page 7 freq=11 is in Memory
+Pages in Memory are:    3    4    6    7 | Referencing page 7 | Page 7 freq=12 is in Memory
+Pages in Memory are:    3    4    6    7 | Referencing page 5 | Page 6 freq=0 is evicted
+Pages in Memory are:    3    4    5    7 | Referencing page 4 | Page 4 freq=12 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 5 | Page 5 freq=1 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 5 | Page 5 freq=2 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 7 | Page 7 freq=13 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 8 | Page 5 freq=2 is evicted
+Pages in Memory are:    3    4    7    8 | Referencing page 7 | Page 7 freq=14 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 6 | Page 8 freq=0 is evicted
+Pages in Memory are:    3    4    6    7 | Referencing page 7 | Page 7 freq=15 is in Memory
+Pages in Memory are:    3    4    6    7 | Referencing page 7 | Page 7 freq=16 is in Memory
+Pages in Memory are:    3    4    6    7 | Referencing page 7 | Page 7 freq=17 is in Memory
+Pages in Memory are:    3    4    6    7 | Referencing page 6 | Page 6 freq=1 is in Memory
+Pages in Memory are:    3    4    6    7 | Referencing page 7 | Page 7 freq=18 is in Memory
+Pages in Memory are:    3    4    6    7 | Referencing page 6 | Page 6 freq=2 is in Memory
+Pages in Memory are:    3    4    6    7 | Referencing page 8 | Page 6 freq=2 is evicted
+Pages in Memory are:    3    4    7    8 | Referencing page 8 | Page 8 freq=1 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 8 | Page 8 freq=2 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 7 | Page 7 freq=19 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 7 | Page 7 freq=20 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 1 | Page 8 freq=2 is evicted
+Pages in Memory are:    1    3    4    7 | Referencing page 1 | Page 1 freq=1 is in Memory
+Pages in Memory are:    1    3    4    7 | Referencing page 7 | Page 7 freq=21 is in Memory
+Pages in Memory are:    1    3    4    7 | Referencing page 6 | Page 1 freq=1 is evicted
+Pages in Memory are: null null null null | Referencing page 4 | Page 4 is loaded in Memory
+Pages in Memory are:    4 null null null | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    4 null null null | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    4 null null null | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    4 null null null | Referencing page 3 | Page 3 is loaded in Memory
+Pages in Memory are:    3    4 null null | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    3    4 null null | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    3    4 null null | Referencing page 8 | Page 8 is loaded in Memory
+Pages in Memory are:    3    4    8 null | Referencing page 7 | Page 7 is loaded in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 5 | Page 8 is evicted
+Pages in Memory are:    3    4    5    7 | Referencing page 6 | Page 4 is evicted
+Pages in Memory are:    3    5    6    7 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    5    6    7 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    5    6    7 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    3    5    6    7 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    3    5    6    7 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    5    6    7 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    5    6    7 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    3    5    6    7 | Referencing page 8 | Page 6 is evicted
+Pages in Memory are:    3    5    7    8 | Referencing page 6 | Page 7 is evicted
+Pages in Memory are:    3    5    6    8 | Referencing page 7 | Page 3 is evicted
+Pages in Memory are:    5    6    7    8 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 3 | Page 7 is evicted
+Pages in Memory are:    3    5    6    8 | Referencing page 7 | Page 6 is evicted
+Pages in Memory are:    3    5    7    8 | Referencing page 4 | Page 8 is evicted
+Pages in Memory are:    3    4    5    7 | Referencing page 8 | Page 3 is evicted
+Pages in Memory are:    4    5    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 0 | Page 8 is evicted
+Pages in Memory are:    0    4    5    7 | Referencing page 0 | Page 0 is in Memory
+Pages in Memory are:    0    4    5    7 | Referencing page 1 | Page 0 is evicted
+Pages in Memory are:    1    4    5    7 | Referencing page 2 | Page 7 is evicted
+Pages in Memory are:    1    2    4    5 | Referencing page 8 | Page 1 is evicted
+Pages in Memory are:    2    4    5    8 | Referencing page 7 | Page 2 is evicted
+Pages in Memory are:    4    5    7    8 | Referencing page 6 | Page 4 is evicted
+Pages in Memory are:    5    6    7    8 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 4 | Page 6 is evicted
+Pages in Memory are:    4    5    7    8 | Referencing page 3 | Page 5 is evicted
+Pages in Memory are:    3    4    7    8 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 2 | Page 3 is evicted
+Pages in Memory are:    2    4    7    8 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    2    4    7    8 | Referencing page 3 | Page 2 is evicted
+Pages in Memory are:    3    4    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 6 | Page 8 is evicted
+Pages in Memory are:    3    4    6    7 | Referencing page 8 | Page 4 is evicted
+Pages in Memory are:    3    6    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    3    6    7    8 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    6    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    6    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    6    7    8 | Referencing page 0 | Page 7 is evicted
+Pages in Memory are:    0    3    6    8 | Referencing page 1 | Page 8 is evicted
+Pages in Memory are:    0    1    3    6 | Referencing page 2 | Page 6 is evicted
+Pages in Memory are:    0    1    2    3 | Referencing page 7 | Page 0 is evicted
+Pages in Memory are:    1    2    3    7 | Referencing page 8 | Page 1 is evicted
+Pages in Memory are:    2    3    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    2    3    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    2    3    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    2    3    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    2    3    7    8 | Referencing page 6 | Page 7 is evicted
+Pages in Memory are:    2    3    6    8 | Referencing page 5 | Page 8 is evicted
+Pages in Memory are:    2    3    5    6 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    2    3    5    6 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    2    3    5    6 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    2    3    5    6 | Referencing page 8 | Page 5 is evicted
+Pages in Memory are:    2    3    6    8 | Referencing page 7 | Page 6 is evicted
+Pages in Memory are:    2    3    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    2    3    7    8 | Referencing page 4 | Page 7 is evicted
+Pages in Memory are:    2    3    4    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    2    3    4    8 | Referencing page 7 | Page 8 is evicted
+Pages in Memory are:    2    3    4    7 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    2    3    4    7 | Referencing page 5 | Page 7 is evicted
+Pages in Memory are:    2    3    4    5 | Referencing page 7 | Page 2 is evicted
+Pages in Memory are:    3    4    5    7 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 6 | Page 4 is evicted
+Pages in Memory are: null null null null | Referencing page 7 | Page 7 is loaded in Memory
+Pages in Memory are:    7 null null null | Referencing page 6 | Page 6 is loaded in Memory
+Pages in Memory are:    7    6 null null | Referencing page 8 | Page 8 is loaded in Memory
+Pages in Memory are:    7    6    8 null | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    7    6    8 null | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    7    6    8 null | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    7    6    8 null | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    7    6    8 null | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    7    6    8 null | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    7    6    8 null | Referencing page 2 | Page 2 is loaded in Memory
+Pages in Memory are:    7    6    8    2 | Referencing page 1 | Page 7 is evicted
+Pages in Memory are:    1    6    8    2 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    6    8    2 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    6    8    2 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    6    8    2 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    1    6    8    2 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    6    8    2 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    6    8    2 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    6    8    2 | Referencing page 7 | Page 6 is evicted
+Pages in Memory are:    1    7    8    2 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    7    8    2 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    1    7    8    2 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    1    7    8    2 | Referencing page 6 | Page 8 is evicted
+Pages in Memory are:    1    7    6    2 | Referencing page 0 | Page 6 is evicted
+Pages in Memory are:    1    7    0    2 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    1    7    0    2 | Referencing page 8 | Page 0 is evicted
+Pages in Memory are:    1    7    8    2 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    1    7    8    2 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    7    8    2 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    1    7    8    2 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    1    7    8    2 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    7    8    2 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    1    7    8    2 | Referencing page 6 | Page 1 is evicted
+Pages in Memory are:    6    7    8    2 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    6    7    8    2 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    6    7    8    2 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    6    7    8    2 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    6    7    8    2 | Referencing page 5 | Page 6 is evicted
+Pages in Memory are:    5    7    8    2 | Referencing page 6 | Page 5 is evicted
+Pages in Memory are:    6    7    8    2 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    6    7    8    2 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    6    7    8    2 | Referencing page 4 | Page 8 is evicted
+Pages in Memory are:    6    7    4    2 | Referencing page 5 | Page 4 is evicted
+Pages in Memory are:    6    7    5    2 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    6    7    5    2 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    6    7    5    2 | Referencing page 4 | Page 6 is evicted
+Pages in Memory are:    4    7    5    2 | Referencing page 8 | Page 7 is evicted
+Pages in Memory are:    4    8    5    2 | Referencing page 7 | Page 8 is evicted
+Pages in Memory are:    4    7    5    2 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    4    7    5    2 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    4    7    5    2 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    4    7    5    2 | Referencing page 8 | Page 5 is evicted
+Pages in Memory are:    4    7    8    2 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    4    7    8    2 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    4    7    8    2 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    4    7    8    2 | Referencing page 3 | Page 4 is evicted
+Pages in Memory are:    3    7    8    2 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    3    7    8    2 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    3    7    8    2 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    3    7    8    2 | Referencing page 4 | Page 3 is evicted
+Pages in Memory are:    4    7    8    2 | Referencing page 5 | Page 7 is evicted
+Pages in Memory are:    4    5    8    2 | Referencing page 6 | Page 4 is evicted
+Pages in Memory are:    6    5    8    2 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    6    5    8    2 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    6    5    8    2 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    6    5    8    2 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    6    5    8    2 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    6    5    8    2 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    6    5    8    2 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    6    5    8    2 | Referencing page 4 | Page 8 is evicted
+Pages in Memory are:    6    5    4    2 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    6    5    4    2 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    6    5    4    2 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    6    5    4    2 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    6    5    4    2 | Referencing page 7 | Page 6 is evicted
+Pages in Memory are:    7    5    4    2 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    7    5    4    2 | Referencing page 6 | Page 4 is evicted
+Pages in Memory are:    7    5    6    2 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    7    5    6    2 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    7    5    6    2 | Referencing page 8 | Page 6 is evicted
+Pages in Memory are:    7    5    8    2 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    7    5    8    2 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    7    5    8    2 | Referencing page 1 | Page 8 is evicted
+Pages in Memory are:    7    5    1    2 | Referencing page 8 | Page 7 is evicted
+Pages in Memory are:    8    5    1    2 | Referencing page 7 | Page 8 is evicted
+Pages in Memory are:    7    5    1    2 | Referencing page 8 | Page 7 is evicted
+Pages in Memory are:    8    5    1    2 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    8    5    1    2 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    8    5    1    2 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    8    5    1    2 | Referencing page 0 | Page 8 is evicted
+Pages in Memory are:    0    5    1    2 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    0    5    1    2 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    0    5    1    2 | Referencing page 7 | Page 1 is evicted
+Pages in Memory are:    0    5    7    2 | Referencing page 6 | Page 5 is evicted
+Pages in Memory are:    0    6    7    2 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    0    6    7    2 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    0    6    7    2 | Referencing page 5 | Page 6 is evicted
+Pages in Memory are:    0    5    7    2 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    0    5    7    2 | Referencing page 8 | Page 0 is evicted
+Pages in Memory are:    8    5    7    2 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are: null null null null | Referencing page 4 | Page 4 is loaded in Memory
+Pages in Memory are:    4 null null null | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    4 null null null | Referencing page 3 | Page 3 is loaded in Memory
+Pages in Memory are:    4    3 null null | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    4    3 null null | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    4    3 null null | Referencing page 7 | Page 7 is loaded in Memory
+Pages in Memory are:    4    3    7 null | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    4    3    7 null | Referencing page 8 | Page 8 is loaded in Memory
+Pages in Memory are:    4    3    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    4    3    7    8 | Referencing page 6 | Page 4 is evicted
+Pages in Memory are:    3    7    8    6 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    7    8    6 | Referencing page 0 | Page 3 is evicted
+Pages in Memory are:    7    8    6    0 | Referencing page 0 | Page 0 is in Memory
+Pages in Memory are:    7    8    6    0 | Referencing page 1 | Page 7 is evicted
+Pages in Memory are:    8    6    0    1 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    8    6    0    1 | Referencing page 2 | Page 8 is evicted
+Pages in Memory are:    6    0    1    2 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    6    0    1    2 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    6    0    1    2 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    6    0    1    2 | Referencing page 3 | Page 6 is evicted
+Pages in Memory are:    0    1    2    3 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    0    1    2    3 | Referencing page 4 | Page 0 is evicted
+Pages in Memory are:    1    2    3    4 | Referencing page 5 | Page 1 is evicted
+Pages in Memory are:    2    3    4    5 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    2    3    4    5 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    2    3    4    5 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    2    3    4    5 | Referencing page 6 | Page 2 is evicted
+Pages in Memory are:    3    4    5    6 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    4    5    6 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    4    5    6 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    4    5    6 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    4    5    6 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    3    4    5    6 | Referencing page 7 | Page 3 is evicted
+Pages in Memory are:    4    5    6    7 | Referencing page 8 | Page 4 is evicted
+Pages in Memory are:    5    6    7    8 | Referencing page 4 | Page 5 is evicted
+Pages in Memory are:    6    7    8    4 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    6    7    8    4 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    6    7    8    4 | Referencing page 5 | Page 6 is evicted
+Pages in Memory are:    7    8    4    5 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    7    8    4    5 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    7    8    4    5 | Referencing page 6 | Page 7 is evicted
+Pages in Memory are:    8    4    5    6 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    8    4    5    6 | Referencing page 0 | Page 8 is evicted
+Pages in Memory are:    4    5    6    0 | Referencing page 0 | Page 0 is in Memory
+Pages in Memory are:    4    5    6    0 | Referencing page 1 | Page 4 is evicted
+Pages in Memory are:    5    6    0    1 | Referencing page 2 | Page 5 is evicted
+Pages in Memory are:    6    0    1    2 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    6    0    1    2 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    6    0    1    2 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    6    0    1    2 | Referencing page 0 | Page 0 is in Memory
+Pages in Memory are:    6    0    1    2 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    6    0    1    2 | Referencing page 7 | Page 6 is evicted
+Pages in Memory are:    0    1    2    7 | Referencing page 6 | Page 0 is evicted
+Pages in Memory are:    1    2    7    6 | Referencing page 8 | Page 1 is evicted
+Pages in Memory are:    2    7    6    8 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    2    7    6    8 | Referencing page 5 | Page 2 is evicted
+Pages in Memory are:    7    6    8    5 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    7    6    8    5 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    7    6    8    5 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    7    6    8    5 | Referencing page 4 | Page 7 is evicted
+Pages in Memory are:    6    8    5    4 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    6    8    5    4 | Referencing page 3 | Page 6 is evicted
+Pages in Memory are:    8    5    4    3 | Referencing page 7 | Page 8 is evicted
+Pages in Memory are:    5    4    3    7 | Referencing page 6 | Page 5 is evicted
+Pages in Memory are:    4    3    7    6 | Referencing page 5 | Page 4 is evicted
+Pages in Memory are:    3    7    6    5 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    7    6    5 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    7    6    5 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    7    6    5 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    3    7    6    5 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    3    7    6    5 | Referencing page 4 | Page 3 is evicted
+Pages in Memory are:    7    6    5    4 | Referencing page 3 | Page 7 is evicted
+Pages in Memory are:    6    5    4    3 | Referencing page 2 | Page 6 is evicted
+Pages in Memory are:    5    4    3    2 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    5    4    3    2 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    5    4    3    2 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    5    4    3    2 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    5    4    3    2 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    5    4    3    2 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    5    4    3    2 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    5    4    3    2 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    5    4    3    2 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    5    4    3    2 | Referencing page 1 | Page 5 is evicted
+Pages in Memory are:    4    3    2    1 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    4    3    2    1 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    4    3    2    1 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    4    3    2    1 | Referencing page 0 | Page 4 is evicted
+Pages in Memory are:    3    2    1    0 | Referencing page 0 | Page 0 is in Memory
+Pages in Memory are:    3    2    1    0 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    3    2    1    0 | Referencing page 0 | Page 0 is in Memory
+Pages in Memory are:    3    2    1    0 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    3    2    1    0 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    3    2    1    0 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    3    2    1    0 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    3    2    1    0 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    3    2    1    0 | Referencing page 7 | Page 3 is evicted
+Pages in Memory are:    2    1    0    7 | Referencing page 8 | Page 2 is evicted
+Pages in Memory are:    1    0    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    1    0    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    0    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are: null null null null | Referencing page 1 | Page 1 is loaded in Memory
+Pages in Memory are:    1 null null null | Referencing page 0 | Page 0 is loaded in Memory
+Pages in Memory are:    1    0 null null | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    0    1 null null | Referencing page 7 | Page 7 is loaded in Memory
+Pages in Memory are:    0    1    7 null | Referencing page 0 | Page 0 is in Memory
+Pages in Memory are:    1    7    0 null | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    7    0    1 null | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    7    0    1 null | Referencing page 8 | Page 8 is loaded in Memory
+Pages in Memory are:    7    0    1    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    0    1    8    7 | Referencing page 6 | Page 0 is evicted
+Pages in Memory are:    1    8    7    6 | Referencing page 2 | Page 1 is evicted
+Pages in Memory are:    8    7    6    2 | Referencing page 3 | Page 8 is evicted
+Pages in Memory are:    7    6    2    3 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    7    6    3    2 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    7    6    3    2 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    6    3    2    7 | Referencing page 8 | Page 6 is evicted
+Pages in Memory are:    3    2    7    8 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    2    7    8    3 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    7    8    3    2 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    7    8    2    3 | Referencing page 4 | Page 7 is evicted
+Pages in Memory are:    8    2    3    4 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    8    2    3    4 | Referencing page 5 | Page 8 is evicted
+Pages in Memory are:    2    3    4    5 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    2    3    5    4 | Referencing page 8 | Page 2 is evicted
+Pages in Memory are:    3    5    4    8 | Referencing page 7 | Page 3 is evicted
+Pages in Memory are:    5    4    8    7 | Referencing page 6 | Page 5 is evicted
+Pages in Memory are:    4    8    7    6 | Referencing page 5 | Page 4 is evicted
+Pages in Memory are:    8    7    6    5 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    7    6    5    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    7    6    5    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    7    6    5    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    6    5    8    7 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    5    8    7    6 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    5    8    7    6 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    7    6    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    5    6    8    7 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 2 | Page 5 is evicted
+Pages in Memory are:    6    7    8    2 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    6    7    2    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    6    7    2    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    6    2    8    7 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    6    2    8    7 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    6    8    7    2 | Referencing page 3 | Page 6 is evicted
+Pages in Memory are:    8    7    2    3 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    8    7    2    3 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    8    2    3    7 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    2    3    7    8 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    3    7    8    2 | Referencing page 1 | Page 3 is evicted
+Pages in Memory are:    7    8    2    1 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    7    8    2    1 | Referencing page 0 | Page 7 is evicted
+Pages in Memory are:    8    2    1    0 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    2    1    0    8 | Referencing page 7 | Page 2 is evicted
+Pages in Memory are:    1    0    8    7 | Referencing page 2 | Page 1 is evicted
+Pages in Memory are:    0    8    7    2 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    0    7    2    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    0    2    8    7 | Referencing page 6 | Page 0 is evicted
+Pages in Memory are:    2    8    7    6 | Referencing page 5 | Page 2 is evicted
+Pages in Memory are:    8    7    6    5 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    8    6    5    7 | Referencing page 4 | Page 8 is evicted
+Pages in Memory are:    6    5    7    4 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    6    5    7    4 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    6    7    4    5 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    7    4    5    6 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    7    4    6    5 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    7    6    5    4 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    6    5    4    7 | Referencing page 8 | Page 6 is evicted
+Pages in Memory are:    5    4    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    5    4    8    7 | Referencing page 1 | Page 5 is evicted
+Pages in Memory are:    4    8    7    1 | Referencing page 0 | Page 4 is evicted
+Pages in Memory are:    8    7    1    0 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    8    7    0    1 | Referencing page 2 | Page 8 is evicted
+Pages in Memory are:    7    0    1    2 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    7    0    1    2 | Referencing page 8 | Page 7 is evicted
+Pages in Memory are:    0    1    2    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    0    1    2    8 | Referencing page 7 | Page 0 is evicted
+Pages in Memory are:    1    2    8    7 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    1    8    7    2 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    8    7    2    1 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    8    7    1    2 | Referencing page 3 | Page 8 is evicted
+Pages in Memory are:    7    1    2    3 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    7    1    3    2 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    7    1    2    3 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    7    1    3    2 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    7    1    3    2 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    7    1    3    2 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    7    3    2    1 | Referencing page 0 | Page 7 is evicted
+Pages in Memory are:    3    2    1    0 | Referencing page 0 | Page 0 is in Memory
+Pages in Memory are:    3    2    1    0 | Referencing page 7 | Page 3 is evicted
+Pages in Memory are:    2    1    0    7 | Referencing page 8 | Page 2 is evicted
+Pages in Memory are:    1    0    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    1    0    8    7 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    1    0    8    7 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    0    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    0    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    0    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    0    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    0    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    1    0    8    7 | Referencing page 6 | Page 1 is evicted
+Pages in Memory are:    0    8    7    6 | Referencing page 4 | Page 0 is evicted
+Pages in Memory are:    8    7    6    4 | Referencing page 5 | Page 8 is evicted
+Pages in Memory are: null null null null | Referencing page 2 | Page 2 is loaded in Memory
+Pages in Memory are:    2 null null null | Referencing page 1 | Page 1 is loaded in Memory
+Pages in Memory are:    1    2 null null | Referencing page 0 | Page 0 is loaded in Memory
+Pages in Memory are:    0    1    2 null | Referencing page 7 | Page 7 is loaded in Memory
+Pages in Memory are:    0    1    2    7 | Referencing page 8 | Page 0 freq=0 is evicted
+Pages in Memory are:    1    2    7    8 | Referencing page 7 | Page 7 freq=1 is in Memory
+Pages in Memory are:    1    2    7    8 | Referencing page 1 | Page 1 freq=1 is in Memory
+Pages in Memory are:    1    2    7    8 | Referencing page 1 | Page 1 freq=2 is in Memory
+Pages in Memory are:    1    2    7    8 | Referencing page 2 | Page 2 freq=1 is in Memory
+Pages in Memory are:    1    2    7    8 | Referencing page 7 | Page 7 freq=2 is in Memory
+Pages in Memory are:    1    2    7    8 | Referencing page 4 | Page 8 freq=0 is evicted
+Pages in Memory are:    1    2    4    7 | Referencing page 4 | Page 4 freq=1 is in Memory
+Pages in Memory are:    1    2    4    7 | Referencing page 4 | Page 4 freq=2 is in Memory
+Pages in Memory are:    1    2    4    7 | Referencing page 5 | Page 2 freq=1 is evicted
+Pages in Memory are:    1    4    5    7 | Referencing page 7 | Page 7 freq=3 is in Memory
+Pages in Memory are:    1    4    5    7 | Referencing page 8 | Page 5 freq=0 is evicted
+Pages in Memory are:    1    4    7    8 | Referencing page 8 | Page 8 freq=1 is in Memory
+Pages in Memory are:    1    4    7    8 | Referencing page 8 | Page 8 freq=2 is in Memory
+Pages in Memory are:    1    4    7    8 | Referencing page 8 | Page 8 freq=3 is in Memory
+Pages in Memory are:    1    4    7    8 | Referencing page 8 | Page 8 freq=4 is in Memory
+Pages in Memory are:    1    4    7    8 | Referencing page 7 | Page 7 freq=4 is in Memory
+Pages in Memory are:    1    4    7    8 | Referencing page 6 | Page 1 freq=2 is evicted
+Pages in Memory are:    4    6    7    8 | Referencing page 6 | Page 6 freq=1 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 8 | Page 8 freq=5 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 8 | Page 8 freq=6 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 8 | Page 8 freq=7 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 7 | Page 7 freq=5 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 8 | Page 8 freq=8 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 8 | Page 8 freq=9 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 8 | Page 8 freq=10 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 7 | Page 7 freq=6 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 6 | Page 6 freq=2 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 4 | Page 4 freq=3 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 4 | Page 4 freq=4 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 5 | Page 6 freq=2 is evicted
+Pages in Memory are:    4    5    7    8 | Referencing page 4 | Page 4 freq=5 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 5 | Page 5 freq=1 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 6 | Page 5 freq=1 is evicted
+Pages in Memory are:    4    6    7    8 | Referencing page 0 | Page 6 freq=0 is evicted
+Pages in Memory are:    0    4    7    8 | Referencing page 0 | Page 0 freq=1 is in Memory
+Pages in Memory are:    0    4    7    8 | Referencing page 0 | Page 0 freq=2 is in Memory
+Pages in Memory are:    0    4    7    8 | Referencing page 7 | Page 7 freq=7 is in Memory
+Pages in Memory are:    0    4    7    8 | Referencing page 6 | Page 0 freq=2 is evicted
+Pages in Memory are:    4    6    7    8 | Referencing page 5 | Page 6 freq=0 is evicted
+Pages in Memory are:    4    5    7    8 | Referencing page 4 | Page 4 freq=6 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 5 | Page 5 freq=1 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 5 | Page 5 freq=2 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 5 | Page 5 freq=3 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 5 | Page 5 freq=4 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 8 | Page 8 freq=11 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 8 | Page 8 freq=12 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 8 | Page 8 freq=13 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 8 | Page 8 freq=14 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 5 | Page 5 freq=5 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 7 | Page 7 freq=8 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 0 | Page 5 freq=5 is evicted
+Pages in Memory are:    0    4    7    8 | Referencing page 0 | Page 0 freq=1 is in Memory
+Pages in Memory are:    0    4    7    8 | Referencing page 1 | Page 0 freq=1 is evicted
+Pages in Memory are:    1    4    7    8 | Referencing page 2 | Page 1 freq=0 is evicted
+Pages in Memory are:    2    4    7    8 | Referencing page 3 | Page 2 freq=0 is evicted
+Pages in Memory are:    3    4    7    8 | Referencing page 3 | Page 3 freq=1 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 7 | Page 7 freq=9 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 6 | Page 3 freq=1 is evicted
+Pages in Memory are:    4    6    7    8 | Referencing page 7 | Page 7 freq=10 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 6 | Page 6 freq=1 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 6 | Page 6 freq=2 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 5 | Page 6 freq=2 is evicted
+Pages in Memory are:    4    5    7    8 | Referencing page 7 | Page 7 freq=11 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 6 | Page 5 freq=0 is evicted
+Pages in Memory are:    4    6    7    8 | Referencing page 6 | Page 6 freq=1 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 5 | Page 6 freq=1 is evicted
+Pages in Memory are:    4    5    7    8 | Referencing page 5 | Page 5 freq=1 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 5 | Page 5 freq=2 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 8 | Page 8 freq=15 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 8 | Page 8 freq=16 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 5 | Page 5 freq=3 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 4 | Page 4 freq=7 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 4 | Page 4 freq=8 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 5 | Page 5 freq=4 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 4 | Page 4 freq=9 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 5 | Page 5 freq=5 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 8 | Page 8 freq=17 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 6 | Page 5 freq=5 is evicted
+Pages in Memory are:    4    6    7    8 | Referencing page 6 | Page 6 freq=1 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 6 | Page 6 freq=2 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 6 | Page 6 freq=3 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 5 | Page 6 freq=3 is evicted
+Pages in Memory are:    4    5    7    8 | Referencing page 4 | Page 4 freq=10 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 8 | Page 8 freq=18 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 3 | Page 5 freq=0 is evicted
+Pages in Memory are:    3    4    7    8 | Referencing page 2 | Page 3 freq=0 is evicted
+Pages in Memory are:    2    4    7    8 | Referencing page 3 | Page 2 freq=0 is evicted
+Pages in Memory are:    3    4    7    8 | Referencing page 7 | Page 7 freq=12 is in Memory
+Pages in Memory are:    3    4    7    8 | Referencing page 6 | Page 3 freq=0 is evicted
+Pages in Memory are:    4    6    7    8 | Referencing page 6 | Page 6 freq=1 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 6 | Page 6 freq=2 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 5 | Page 6 freq=2 is evicted
+Pages in Memory are:    4    5    7    8 | Referencing page 5 | Page 5 freq=1 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 7 | Page 7 freq=13 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 6 | Page 5 freq=1 is evicted
+Pages in Memory are: null null null null | Referencing page 5 | Page 5 is loaded in Memory
+Pages in Memory are:    5 null null null | Referencing page 6 | Page 6 is loaded in Memory
+Pages in Memory are:    5    6 null null | Referencing page 7 | Page 7 is loaded in Memory
+Pages in Memory are:    5    6    7 null | Referencing page 8 | Page 8 is loaded in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 3 | Page 8 is evicted
+Pages in Memory are:    3    5    6    7 | Referencing page 8 | Page 3 is evicted
+Pages in Memory are:    5    6    7    8 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 0 | Page 7 is evicted
+Pages in Memory are:    0    5    6    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    0    5    6    8 | Referencing page 1 | Page 8 is evicted
+Pages in Memory are:    0    1    5    6 | Referencing page 0 | Page 0 is in Memory
+Pages in Memory are:    0    1    5    6 | Referencing page 0 | Page 0 is in Memory
+Pages in Memory are:    0    1    5    6 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    0    1    5    6 | Referencing page 0 | Page 0 is in Memory
+Pages in Memory are:    0    1    5    6 | Referencing page 0 | Page 0 is in Memory
+Pages in Memory are:    0    1    5    6 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    0    1    5    6 | Referencing page 7 | Page 0 is evicted
+Pages in Memory are:    1    5    6    7 | Referencing page 8 | Page 1 is evicted
+Pages in Memory are:    5    6    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 4 | Page 7 is evicted
+Pages in Memory are:    4    5    6    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    4    5    6    8 | Referencing page 7 | Page 8 is evicted
+Pages in Memory are:    4    5    6    7 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    4    5    6    7 | Referencing page 8 | Page 6 is evicted
+Pages in Memory are:    4    5    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 6 | Page 7 is evicted
+Pages in Memory are:    4    5    6    8 | Referencing page 7 | Page 5 is evicted
+Pages in Memory are:    4    6    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    4    6    7    8 | Referencing page 5 | Page 6 is evicted
+Pages in Memory are:    4    5    7    8 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    4    5    7    8 | Referencing page 3 | Page 7 is evicted
+Pages in Memory are:    3    4    5    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    4    5    8 | Referencing page 7 | Page 8 is evicted
+Pages in Memory are:    3    4    5    7 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    3    4    5    7 | Referencing page 6 | Page 7 is evicted
+Pages in Memory are:    3    4    5    6 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    4    5    6 | Referencing page 0 | Page 4 is evicted
+Pages in Memory are:    0    3    5    6 | Referencing page 1 | Page 6 is evicted
+Pages in Memory are:    0    1    3    5 | Referencing page 2 | Page 0 is evicted
+Pages in Memory are:    1    2    3    5 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    1    2    3    5 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    1    2    3    5 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    1    2    3    5 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    1    2    3    5 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    1    2    3    5 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    1    2    3    5 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    1    2    3    5 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    1    2    3    5 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    1    2    3    5 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    1    2    3    5 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    1    2    3    5 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    1    2    3    5 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    1    2    3    5 | Referencing page 7 | Page 1 is evicted
+Pages in Memory are:    2    3    5    7 | Referencing page 8 | Page 2 is evicted
+Pages in Memory are:    3    5    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    5    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    3    5    7    8 | Referencing page 6 | Page 3 is evicted
+Pages in Memory are:    5    6    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    5    6    7    8 | Referencing page 2 | Page 8 is evicted
+Pages in Memory are:    2    5    6    7 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    2    5    6    7 | Referencing page 8 | Page 7 is evicted
+Pages in Memory are:    2    5    6    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    2    5    6    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    2    5    6    8 | Referencing page 7 | Page 8 is evicted
+Pages in Memory are:    2    5    6    7 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    2    5    6    7 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    2    5    6    7 | Referencing page 8 | Page 6 is evicted
+Pages in Memory are:    2    5    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    2    5    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    2    5    7    8 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    2    5    7    8 | Referencing page 1 | Page 7 is evicted
+Pages in Memory are:    1    2    5    8 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    1    2    5    8 | Referencing page 3 | Page 2 is evicted
+Pages in Memory are:    1    3    5    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    1    3    5    8 | Referencing page 7 | Page 8 is evicted
+Pages in Memory are:    1    3    5    7 | Referencing page 8 | Page 1 is evicted
+Pages in Memory are:    3    5    7    8 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    5    7    8 | Referencing page 4 | Page 8 is evicted
+Pages in Memory are: null null null null | Referencing page 7 | Page 7 is loaded in Memory
+Pages in Memory are:    7 null null null | Referencing page 8 | Page 8 is loaded in Memory
+Pages in Memory are:    7    8 null null | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    7    8 null null | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    7    8 null null | Referencing page 0 | Page 0 is loaded in Memory
+Pages in Memory are:    7    8    0 null | Referencing page 1 | Page 1 is loaded in Memory
+Pages in Memory are:    7    8    0    1 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    7    8    0    1 | Referencing page 2 | Page 7 is evicted
+Pages in Memory are:    2    8    0    1 | Referencing page 7 | Page 8 is evicted
+Pages in Memory are:    2    7    0    1 | Referencing page 3 | Page 7 is evicted
+Pages in Memory are:    2    3    0    1 | Referencing page 4 | Page 2 is evicted
+Pages in Memory are:    4    3    0    1 | Referencing page 8 | Page 0 is evicted
+Pages in Memory are:    4    3    8    1 | Referencing page 7 | Page 8 is evicted
+Pages in Memory are:    4    3    7    1 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    4    3    7    1 | Referencing page 8 | Page 3 is evicted
+Pages in Memory are:    4    8    7    1 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    4    8    7    1 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    4    8    7    1 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    4    8    7    1 | Referencing page 3 | Page 4 is evicted
+Pages in Memory are:    3    8    7    1 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    8    7    1 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    3    8    7    1 | Referencing page 6 | Page 8 is evicted
+Pages in Memory are:    3    6    7    1 | Referencing page 5 | Page 6 is evicted
+Pages in Memory are:    3    5    7    1 | Referencing page 6 | Page 7 is evicted
+Pages in Memory are:    3    5    6    1 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    3    5    6    1 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    3    5    6    1 | Referencing page 4 | Page 6 is evicted
+Pages in Memory are:    3    5    4    1 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    3    5    4    1 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    3    5    4    1 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    3    5    4    1 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    3    5    4    1 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    3    5    4    1 | Referencing page 8 | Page 4 is evicted
+Pages in Memory are:    3    5    8    1 | Referencing page 7 | Page 5 is evicted
+Pages in Memory are:    3    7    8    1 | Referencing page 0 | Page 7 is evicted
+Pages in Memory are:    3    0    8    1 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    0    8    1 | Referencing page 7 | Page 8 is evicted
+Pages in Memory are:    3    0    7    1 | Referencing page 6 | Page 7 is evicted
+Pages in Memory are:    3    0    6    1 | Referencing page 5 | Page 6 is evicted
+Pages in Memory are:    3    0    5    1 | Referencing page 6 | Page 3 is evicted
+Pages in Memory are:    6    0    5    1 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    6    0    5    1 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    6    0    5    1 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    6    0    5    1 | Referencing page 8 | Page 0 is evicted
+Pages in Memory are:    6    8    5    1 | Referencing page 7 | Page 6 is evicted
+Pages in Memory are:    7    8    5    1 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    7    8    5    1 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    7    8    5    1 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    7    8    5    1 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    7    8    5    1 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    7    8    5    1 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    7    8    5    1 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    7    8    5    1 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    7    8    5    1 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    7    8    5    1 | Referencing page 6 | Page 5 is evicted
+Pages in Memory are:    7    8    6    1 | Referencing page 5 | Page 6 is evicted
+Pages in Memory are:    7    8    5    1 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    7    8    5    1 | Referencing page 6 | Page 7 is evicted
+Pages in Memory are:    6    8    5    1 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    6    8    5    1 | Referencing page 7 | Page 8 is evicted
+Pages in Memory are:    6    7    5    1 | Referencing page 8 | Page 6 is evicted
+Pages in Memory are:    8    7    5    1 | Referencing page 3 | Page 8 is evicted
+Pages in Memory are:    3    7    5    1 | Referencing page 8 | Page 7 is evicted
+Pages in Memory are:    3    8    5    1 | Referencing page 7 | Page 3 is evicted
+Pages in Memory are:    7    8    5    1 | Referencing page 4 | Page 5 is evicted
+Pages in Memory are:    7    8    4    1 | Referencing page 4 | Page 4 is in Memory
+Pages in Memory are:    7    8    4    1 | Referencing page 5 | Page 4 is evicted
+Pages in Memory are:    7    8    5    1 | Referencing page 6 | Page 7 is evicted
+Pages in Memory are:    6    8    5    1 | Referencing page 5 | Page 5 is in Memory
+Pages in Memory are:    6    8    5    1 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    6    8    5    1 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    6    8    5    1 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    6    8    5    1 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    6    8    5    1 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    6    8    5    1 | Referencing page 7 | Page 5 is evicted
+Pages in Memory are:    6    8    7    1 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    6    8    7    1 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    6    8    7    1 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    6    8    7    1 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    6    8    7    1 | Referencing page 6 | Page 6 is in Memory
+Pages in Memory are:    6    8    7    1 | Referencing page 7 | Page 7 is in Memory
+Pages in Memory are:    6    8    7    1 | Referencing page 3 | Page 6 is evicted
+Pages in Memory are:    3    8    7    1 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    3    8    7    1 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    8    7    1 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    3    8    7    1 | Referencing page 3 | Page 3 is in Memory
+Pages in Memory are:    3    8    7    1 | Referencing page 2 | Page 8 is evicted
+Pages in Memory are:    3    2    7    1 | Referencing page 2 | Page 2 is in Memory
+Pages in Memory are:    3    2    7    1 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    3    2    7    1 | Referencing page 0 | Page 7 is evicted
+Pages in Memory are:    3    2    0    1 | Referencing page 8 | Page 0 is evicted
+Pages in Memory are:    3    2    8    1 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    3    2    8    1 | Referencing page 7 | Page 8 is evicted
+Pages in Memory are:    3    2    7    1 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    3    2    7    1 | Referencing page 0 | Page 2 is evicted
+Pages in Memory are:    3    0    7    1 | Referencing page 1 | Page 1 is in Memory
+Pages in Memory are:    3    0    7    1 | Referencing page 2 | Page 0 is evicted
+Pages in Memory are:    3    2    7    1 | Referencing page 8 | Page 3 is evicted
+Pages in Memory are:    8    2    7    1 | Referencing page 8 | Page 8 is in Memory
+Pages in Memory are:    8    2    7    1 | Referencing page 8 | Page 8 is in Memory
+Average Hit Ratio for FIFO replace algorithm is 62%
+Average Hit Ratio for LRU replace algorithm is 64%
+Average Hit Ratio for LFU replace algorithm is 64%
+Average Hit Ratio for MFU replace algorithm is 64%
+Average Hit Ratio for RANDPICK replace algorithm is 66%
