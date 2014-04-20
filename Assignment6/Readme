@@ -1,0 +1,4 @@
+Assignment 6 
+parent read from pipe, write to file
+child 1-4 write to pipe
+child 5 read from terminal, and write the input to pipe
